@@ -1,0 +1,11 @@
+<h2>Forum 4 movies</h2>
+<h4>Search a movie</h4>
+
+
+
+<form action="/movies/" method="POST">
+	<input type="text" name="title" ></input>
+	<input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+	<button type="submit">Search</button>
+</form>

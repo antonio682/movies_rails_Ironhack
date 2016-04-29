@@ -1,0 +1,9 @@
+<h1>Movies</h1>
+<h2>Choose a film to star a coversation </h2>
+<form action="/movies/create" method='POST'>
+	<% @movies.each do  |mov| %>
+		<img src="<%=mov.poster%>" alt="film poster" heigth="120" width="90">
+		<%=mov.title %><input type="radio" name="selection" value="<%=mov.id %>">
+		 </br>
+	<%end%>
+</form>
